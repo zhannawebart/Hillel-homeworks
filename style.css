@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+li {
+  color: rgb(207, 157, 29);
+}
+
+#item {
+  color: rgb(121, 207, 29);
+}
+
+.item {
+  color: rgb(29, 154, 207);
+}
+
+.item.item4 {
+  color: rgb(207, 29, 115);
+}
+
+.item .link {
+  color: rgb(171, 29, 207);
+}
