@@ -17,7 +17,8 @@ html {
   text-decoration: none;
   color: blue;
   display: block;
-  margin-left: 160px; /*?*/
+  /*margin-left: 160px; /*?*/
+  text-align: end;
 }
 
 h1 {
