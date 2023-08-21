@@ -11,3 +11,48 @@ html {
   font-weight: 400;
   color: #353535;
 }
+
+.container {
+  background-color: #c4c4c4;
+  width: 1100px;
+  margin: 100px auto;
+  padding: 50px;
+}
+
+.wrapper {
+  background-color: #e6e6e6;
+  margin: 50px;
+}
+
+.clearfix {
+  clear: both;
+  overflow: auto;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+  color: #ffffff;
+  text-align: center;
+  line-height: 200px;
+  font-size: 64px;
+}
+
+.card.small {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 36px;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
