@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Pacifico"; /* only font name */
+  src: local("Pacifico"), url("./Pacifico-Regular.woff2") format("woff2"); /* Path to file with font */
+  font-weight: 400;
+  font-style: normal;
+}
