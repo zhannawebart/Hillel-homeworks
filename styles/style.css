@@ -5,9 +5,35 @@
 }
 
 html {
-  font-family: Pacifico, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
-  color: #353535;
+  color: #201f1f;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 738px;
+}
+
+table {
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+td,
+th {
+  padding: 0.25rem 0.5rem;
+}
+
+.bg-yellow {
+  background-color: rgb(250, 232, 40);
 }
