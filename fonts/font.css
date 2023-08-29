@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Roboto"; /* only font name */
-  src: local("Roboto"), url("./Roboto-Regular.woff2") format("woff2"); /* Path to file with font */
+  src: local("Roboto"), url("./RobotoRegular.woff2") format("woff2"); /* Path to file with font */
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto"; /* only font name */
-  src: local("Roboto"), url("./Roboto-Medium.woff2") format("woff2"); /* Path to file with font */
+  src: local("Roboto"), url("./RobotoMedium.woff2") format("woff2"); /* Path to file with font */
   font-weight: 500;
   font-style: normal;
 }
