@@ -17,6 +17,13 @@ a:hover {
   text-decoration: none;
 }
 
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
 /*img {
   display: block;
   max-width: 100%;
