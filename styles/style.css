@@ -1,8 +1,8 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --text-size: 16px;
-  --text-color: #353535;
+  --text-size: 12px;
+  --text-color: #fff;
 }
 
 * {
@@ -14,7 +14,7 @@
 a,
 a:hover {
   color: inherit;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 input,
@@ -39,23 +39,13 @@ html {
   font-weight: 400;
 }
 
-body {
+/*body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
+}*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.container {
+/*.container {
   width: 100%;
   max-width: calc(var(--container-width) + var(--basic-space) * 2);
   padding-left: var(--basic-space);
@@ -63,13 +53,149 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}*/
+
+.bg {
+  background: #ccc url("../images/bg.jpg") no-repeat center/cover;
 }
 
-/*.py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}*/
+.container {
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+  float: right;
+  padding: 60px 78px 171px 78px;
+}
 
-/*.hidden {
-  display: none !important;
-}*/
+.switch-buttons {
+  margin-bottom: 75px;
+  border: 1px solid #153416;
+  border-radius: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+.not-active-btn {
+  background-color: transparent;
+  border-radius: 30px;
+  border: none;
+  padding: 9px 50px;
+  color: #fff;
+  /*float: right;*/
+}
+
+.active-btn {
+  background-color: #153416;
+  padding: 9px 70px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+.small-btn:hover {
+  background-color: #112e12;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 29px;
+}
+
+.input {
+  width: 100%;
+  max-width: 340px;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 15px 20px;
+  background-color: #929191;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+.mg-password {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.forgot-password {
+  float: right;
+  color: #153416;
+}
+.forgot-password:hover {
+  color: #434d43;
+}
+
+.checkbox-label {
+  position: absolute;
+}
+#checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+#checkbox:checked + .checkbox {
+  background: #153416 url("../images/mark-icon.svg") no-repeat center/cover;
+}
+.mg-label {
+  margin-left: 10px;
+}
+
+.btn {
+  width: 340px;
+  border-radius: 2.5rem;
+  background-color: #153416;
+  color: #fff;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.btn:hover {
+  background-color: #112e12;
+}
+
+p {
+  display: inline-block; /*чтобы след элемент стал рядом, а не под*/
+  margin-right: 15px;
+  color: #153416;
+}
+
+.enroll:hover {
+  color: #153416;
+}
+
+.mg {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.center-box {
+  text-align: center;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.social-link + .social-link {
+  margin-left: 20px;
+}

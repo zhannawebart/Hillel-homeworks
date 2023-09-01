@@ -1,21 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Форма</title>
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="bg">
     <header></header>
     <main>
         <section>
-            <div>
-                <h1>Hello</h1>
+            <div class="container">
+                <div class="switch-buttons">
+                    <button class="active-btn">Вход</button>
+                    <button class="not-active-btn">Регистрация</button>
+                </div>
+
+                <h3 class="form-title">Вход</h3>
+                <form action="https://fom.in.ua/echo" method="post">
+                    <div class="">
+                        <label>
+                            <input class="input" type="email" name="email" placeholder="Введите E-mail" id="email">
+                        </label>
+                    </div>
+                    <div class="mg-password">
+                        <label>
+                            <input class="input" type="password" name="password" placeholder="Пароль" id="password">
+                        </label>
+                    </div>
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="checkbox">
+                            <span class="checkbox"></span>
+                            <span class="mg-label">Запомнить меня</span>
+                        </label>
+                        <a class="forgot-password" href="#">Забыли пароль?</a>
+                    </div>
+                    <div>
+                        <button class="btn" type="submit">Войти</button>
+                    </div>
+                    <div class="center-box">
+                        <p>Еще нет аккаунта?</p>
+                        <a href="./pages/form-part2.html" class="enroll">Зарегистрироваться</a>
+                    </div>
+                    <div class="center-box">
+                        <p class="mg">Или войдите через</p>
+                        <div>
+                            <a href="#" class="social-link">
+                                <img src="./images/Facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="./images/Insta.svg" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="./images/LinkedIn.svg" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </section>
     </main>
