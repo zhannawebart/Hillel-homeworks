@@ -33,7 +33,7 @@ html {
 .nav2 {
   position: absolute;
   left: 0;
-  top: 50px; /*отступ от выпад меню до главного navbar*/
+  top: 50px;
   display: none;
   width: 200px;
   list-style: none;
