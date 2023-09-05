@@ -57,13 +57,15 @@ html {
 
 .bg {
   background: #ccc url("../images/bg.jpg") no-repeat center/cover;
+  width: 100%;
+  min-height: 100vh;
 }
-
 .container {
   background: rgba(233, 233, 233, 0.25);
   backdrop-filter: blur(5px);
   float: right;
   padding: 60px 78px 171px 78px;
+  min-height: 100vh;
 }
 
 .switch-buttons {
