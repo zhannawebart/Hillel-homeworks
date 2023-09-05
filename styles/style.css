@@ -1,10 +1,3 @@
-:root {
-  --container-width: 1110px;
-  --basic-space: 1rem;
-  --text-size: 16px;
-  --text-color: #353535;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -13,63 +6,72 @@
 
 a,
 a:hover {
-  color: inherit;
+  /*color: inherit;*/
   text-decoration: none;
 }
 
-input,
-textarea,
-button,
-select {
-  font: inherit;
-}
-
-/*img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-}*/
-
 html {
   font-family: "Roboto", sans-serif;
-  color: var(--text-color);
-  font-size: var(--text-size);
   line-height: 1.5;
   font-weight: 400;
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.container {
-  width: 100%;
-  max-width: calc(var(--container-width) + var(--basic-space) * 2);
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
-  margin-left: auto;
-  margin-right: auto;
+.nav-link {
   position: relative;
+  width: 200px;
+  float: left;
+  list-style: none;
+  height: 50px;
+  padding: 0;
+  padding-top: 12px;
+  margin-top: 0;
+  text-align: center;
+  background: #151e14;
 }
 
-/*.py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}*/
+.nav1,
+.nav2 {
+  position: absolute;
+  left: 0;
+  top: 50px; /*отступ от выпад меню до главного navbar*/
+  display: none;
+  width: 200px;
+  list-style: none;
+}
 
-/*.hidden {
-  display: none !important;
-}*/
+.nav2 {
+  left: 200px;
+  top: 0;
+}
+
+.link {
+  height: 50px;
+  margin: 0;
+  width: 200px;
+  text-align: center;
+  background-color: #151e14;
+}
+
+.link-style {
+  display: block;
+  width: 200px;
+  height: 50px;
+  color: #e5e5e5;
+}
+
+.nav-link:hover .nav1,
+.nav2 {
+  display: block;
+}
+
+.nav-link:hover {
+  background: #dd7003;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav1 .nav-link:hover .hidden {
+  display: block;
+}
