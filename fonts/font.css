@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "Roboto"; /* only font name */
-  src: local("Roboto"), url("./Roboto-Medium.woff2") format("woff2"); /* Path to file with font */
-  font-weight: 500;
+  font-family: "Vetrino"; /* only font name */
+  src: local("Vetrino"), url("./Vetrino-Regular.woff2") format("woff2"); /* Path to file with font */
+  font-weight: 400;
   font-style: normal;
 }
