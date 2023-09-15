@@ -12,22 +12,38 @@
 
 <body>
     <header>
-        <ul class="main-nav">
-            <li class="nav-link"><a class="link-style" href="#">Home</a></li>
-            <li class="nav-link"><a class="link-style" href="#">Products</a>
-                <ul class="nav1">
-                    <li class="nav-link link"><a class="link-style" href="#">Product1</a></li>
-                    <li class="nav-link link"><a class="link-style" href="#">Product2</a>
-                        <ul class="nav2">
-                            <li class="nav-link hidden"><a class="link-style" href="#">Sub Item</a></li>
-                            <li class="nav-link hidden"><a class="link-style" href="#">Sub Item</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-link"><a class="link-style" href="#">About</a></li>
-            <li class="nav-link"><a class="link-style" href="#">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products <span>&darr;</span></a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">Product1 <span>&rarr;</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Product2 <span>&rarr;</span></a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#">Sub item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sub item</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <script src="./js/script.js"></script>
 </body>
