@@ -1,8 +1,13 @@
 :root {
-  --container-width: 1110px;
+  --container-width: 1320px;
   --basic-space: 1rem;
   --text-size: 16px;
-  --text-color: #353535;
+  --text-color: #000000;
+  --bg-basic-color: #ffffff;
+  --bg-footer-color: #e7ded8;
+  --footer-bg-color: #f5f5fa;
+  --grey-text: #b3b3ba;
+  --accent: #f0145a;
 }
 
 * {
@@ -17,25 +22,18 @@ a:hover {
   text-decoration: none;
 }
 
-input,
-textarea,
-button,
-select {
-  font: inherit;
-}
-
-/*img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-}*/
+/*input,
+  textarea,
+  button,
+  select {
+    font: inherit;
+  }*/
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-color);
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: 1.15;
   font-weight: 400;
 }
 
@@ -43,19 +41,10 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  background-color: var(--basic-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.container {
+.main-container {
   width: 100%;
   max-width: calc(var(--container-width) + var(--basic-space) * 2);
   padding-left: var(--basic-space);
@@ -65,11 +54,12 @@ h6 {
   position: relative;
 }
 
-/*.py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}*/
-
-/*.hidden {
-  display: none !important;
-}*/
+.smaller-container {
+  width: 100%;
+  max-width: 1080px;
+  /*padding-left: var(--basic-space);
+  padding-right: var(--basic-space);*/
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
